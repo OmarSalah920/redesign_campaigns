@@ -859,8 +859,8 @@ export const NewCampaignModal: React.FC<NewCampaignModalProps> = ({
                               {selectedGroup ? (
                                 <div className="flex items-center justify-between w-full">
                                   <span className="font-medium">{selectedGroup.name}</span>
-                                  <span className="text-sm text-gray-500 ml-2">
-                                    {selectedGroup.onlineCount}/{selectedGroup.agentCount} online
+                              <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-3 py-2 bg-gray-900 text-white text-xs rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none whitespace-nowrap z-10 max-w-xs">
+                                Select the agent group to automate the number of outbound calls concurrency based on the current count of online agents.
                                   </span>
                                 </div>
                               ) : (
